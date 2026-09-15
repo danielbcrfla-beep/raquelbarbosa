@@ -24,88 +24,88 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "casa-contemporanea",
-    name: "Casa Contemporânea",
+    slug: "cozinha-planejada",
+    name: "Cozinha Planejada",
     location: "Sorocaba, SP",
-    category: "Residencial",
+    category: "Cozinhas",
     year: "2025",
     concept:
-      "Integração entre estar, jantar e cozinha em um único gesto arquitetônico, com materiais naturais e luz abundante.",
+      "Uma cozinha integrada à sala, com marcenaria em tom claro, bancada em pedra natural e luz abundante.",
     description:
-      "O projeto parte da leitura da rotina da família para reorganizar os ambientes sociais em uma sequência contínua. Marcenaria em madeira clara, pedra natural e tons neutros criam uma base atemporal, enquanto a iluminação foi desenhada em camadas para acompanhar o uso ao longo do dia.",
+      "O projeto reorganiza a cozinha em um gesto contínuo de armários planejados, do piso ao teto. Cada porta, gaveta e nicho foi desenhado para a rotina da família: despensa organizada, torre de eletrodomésticos e uma ilha que recebe as refeições do dia a dia.",
     cover: p1,
     ratio: "landscape",
     gallery: [p1, p5, p4],
-    materials: ["Madeira clara", "Pedra natural", "Linho", "Metais em tom fosco"],
+    materials: ["MDF laminado amadeirado claro", "Pedra natural", "Ferragens com amortecimento", "Puxadores perfil metal"],
     result:
-      "Ambientes amplos, silenciosos e funcionais, com circulação generosa e forte presença da luz natural.",
+      "Uma cozinha ampla, silenciosa e funcional, com aproveitamento total do espaço e forte presença da luz natural.",
   },
   {
-    slug: "elegancia-natural",
-    name: "Elegância Natural",
+    slug: "dormitorio-sob-medida",
+    name: "Dormitório Sob Medida",
     location: "São Paulo, SP",
-    category: "Interiores",
+    category: "Dormitórios",
     year: "2025",
     concept:
-      "Um refúgio íntimo construído a partir de texturas suaves, camadas de tecido e uma paleta serena.",
+      "Um refúgio íntimo com guarda-roupa planejado, cabeceira estofada e camadas suaves de tecido.",
     description:
-      "A suíte principal foi tratada como um ambiente de descanso absoluto. As cortinas em linho difundem a luz, a pedra natural aparece em pontos precisos e a paleta permanece em tons neutros com um acento discreto em verde-azulado.",
+      "A suíte principal foi tratada como um ambiente de descanso absoluto. O guarda-roupa planejado ocupa a parede inteira com portas de correr em tom neutro, a cabeceira em tecido texturizado aconchega a cama e a iluminação indireta cria uma atmosfera serena.",
     cover: p2,
     ratio: "portrait",
     gallery: [p2, p4, p5],
-    materials: ["Linho natural", "Mármore travertino", "Carvalho", "Tecidos texturizados"],
+    materials: ["MDF em tom neutro", "Tecidos texturizados", "Carvalho", "Iluminação indireta em LED"],
     result:
-      "Um ambiente acolhedor e sofisticado, com conforto térmico, acústico e visual.",
+      "Um dormitório acolhedor e organizado, com conforto térmico, acústico e visual.",
   },
   {
-    slug: "essencia-urbana",
-    name: "Essência Urbana",
+    slug: "home-office-planejado",
+    name: "Home Office Planejado",
     location: "São Paulo, SP",
-    category: "Comercial",
+    category: "Home Office",
     year: "2024",
     concept:
-      "Um espaço comercial com atmosfera de galeria: superfícies minerais, madeira escura e iluminação escultural.",
+      "Um escritório em casa com atmosfera de galeria: madeira escura, superfícies minerais e iluminação escultural.",
     description:
-      "A recepção foi concebida como primeira narrativa da marca. Paredes em cimento queimado, balcão em madeira escura e luminárias esculturais compõem um ambiente que equilibra presença e discrição.",
+      "O home office foi desenhado para longas jornadas de trabalho: bancada ampla em madeira escura, estantes planejadas que organizam livros e objetos, e marcenaria que esconde fios e equipamentos. O resultado equilibra presença e discrição.",
     cover: p3,
     ratio: "landscape",
     gallery: [p3, p5, p1],
-    materials: ["Cimento queimado", "Nogueira", "Latão escovado", "Concreto polido"],
+    materials: ["Nogueira", "Laminado texturizado", "Latão escovado", "Iluminação focal"],
     result:
-      "Uma recepção memorável, que traduz o posicionamento da marca sem excessos.",
+      "Um escritório memorável em casa, que organiza a rotina de trabalho sem excessos.",
   },
   {
-    slug: "banho-mineral",
-    name: "Banho Mineral",
+    slug: "banheiro-sob-medida",
+    name: "Banheiro Sob Medida",
     location: "Sorocaba, SP",
-    category: "Reforma",
+    category: "Banheiros",
     year: "2024",
     concept:
-      "Reforma integral de um banho com foco em continuidade material e luz difusa.",
+      "Gabinete planejado e continuidade material para um banho sereno e de manutenção simples.",
     description:
-      "Grandes placas de travertino criam uma superfície contínua que amplia a percepção do espaço. A bancada suspensa em carvalho e a marcenaria sob medida organizam o uso diário com discrição.",
+      "Grandes placas de travertino criam uma superfície contínua que amplia a percepção do espaço. O gabinete suspenso em carvalho e a marcenaria sob medida organizam o uso diário com discrição, com gavetas internas e nichos para cada item.",
     cover: p4,
     ratio: "portrait",
     gallery: [p4, p2, p5],
     materials: ["Travertino", "Carvalho", "Vidro temperado", "Metais em grafite"],
-    result: "Um espaço sereno, de manutenção simples e presença mineral.",
+    result: "Um banho sereno, com marcenaria precisa e presença mineral.",
   },
   {
-    slug: "curadoria-de-materiais",
-    name: "Curadoria de Materiais",
+    slug: "living-planejado",
+    name: "Living Planejado",
     location: "São Paulo, SP",
-    category: "Decoração",
+    category: "Salas",
     year: "2026",
     concept:
-      "Seleção de acabamentos, tecidos e objetos para um projeto residencial em fase de execução.",
+      "Painel de TV, estante e rack planejados em uma composição única para a sala de estar.",
     description:
-      "O trabalho concentrou-se na composição de materiais: madeira, pedra, linho e metal em proporções calibradas. A curadoria orienta cada decisão de compra e garante coerência entre todos os ambientes.",
+      "O living ganhou uma parede inteira de marcenaria planejada: painel para a TV, estante com nichos iluminados e rack suspenso que esconde os equipamentos. Madeira, pedra e metal em proporções calibradas garantem coerência com o restante da casa.",
     cover: p5,
     ratio: "landscape",
     gallery: [p5, p1, p2],
     materials: ["Carvalho", "Pedra bege", "Linho", "Latão"],
     result:
-      "Uma paleta material consistente, aplicável a todos os ambientes do projeto.",
+      "Uma sala integrada e elegante, com cada móvel desenhado para o espaço exato que ocupa.",
   },
 ];
 
