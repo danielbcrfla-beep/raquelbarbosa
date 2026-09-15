@@ -8,17 +8,17 @@ import { services, processSteps, testimonials } from "@/data/content";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Raquel Barbosa | Design de Interiores" },
+      { title: "Raquel Barbosa | Móveis Planejados" },
       {
         name: "description",
         content:
-          "Projetos de interiores personalizados, sofisticados e funcionais. Ambientes residenciais e comerciais que refletem a essência de cada cliente.",
+          "Móveis planejados sob medida: cozinhas, dormitórios, closets, home offices e salas que transformam sua casa.",
       },
-      { property: "og:title", content: "Raquel Barbosa | Design de Interiores" },
+      { property: "og:title", content: "Raquel Barbosa | Móveis Planejados" },
       {
         property: "og:description",
         content:
-          "Projetos de interiores personalizados, sofisticados e funcionais para ambientes atemporais.",
+          "Móveis planejados sob medida para todos os ambientes da casa, do projeto à instalação.",
       },
     ],
   }),
@@ -47,14 +47,14 @@ function Index() {
             className="animate-fade-up mt-12 max-w-2xl text-4xl leading-[1.12] md:mt-16 md:text-6xl"
             style={{ animationDelay: "150ms" }}
           >
-            Ambientes que refletem sua essência.
+            Móveis planejados que transformam sua casa.
           </h1>
           <p
             className="animate-fade-up mt-8 max-w-lg text-sm leading-loose opacity-85"
             style={{ animationDelay: "300ms" }}
           >
-            Projetos de interiores pensados para transformar espaços em experiências
-            únicas, funcionais e atemporais.
+            Cozinhas, dormitórios, closets, home offices e salas sob medida —
+            projetados para o seu espaço e para o seu estilo de vida.
           </p>
           <div
             className="animate-fade-up mt-12 flex flex-wrap gap-4"
@@ -76,12 +76,13 @@ function Index() {
           <Reveal className="md:col-span-5 md:col-start-1">
             <p className="label-eyebrow">Estúdio</p>
             <h2 className="mt-8 text-3xl leading-[1.15] md:text-5xl">
-              Interiores com identidade.
+              Marcenaria sob medida, do projeto à instalação.
             </h2>
             <p className="mt-8 max-w-md text-sm leading-loose text-muted-foreground">
               Cada projeto nasce da combinação entre estética, funcionalidade e
-              personalidade. Raquel Barbosa desenvolve ambientes que traduzem o estilo de
-              vida de cada cliente em espaços sofisticados, acolhedores e atemporais.
+              aproveitamento do espaço. Raquel Barbosa projeta móveis planejados que
+              traduzem o estilo de vida de cada cliente em ambientes sofisticados,
+              organizados e atemporais.
             </p>
             <Link
               to="/sobre"
@@ -128,7 +129,7 @@ function Index() {
           <Reveal>
             <p className="label-eyebrow">Serviços</p>
             <h2 className="mt-6 max-w-xl text-3xl leading-[1.2] md:text-5xl">
-              Do conceito ao detalhe final.
+              Do projeto à instalação.
             </h2>
           </Reveal>
           <ul className="mt-16 md:mt-24">
@@ -163,7 +164,7 @@ function Index() {
         <Reveal>
           <p className="label-eyebrow">Processo</p>
           <h2 className="mt-6 max-w-2xl text-3xl leading-[1.2] md:text-5xl">
-            Do primeiro encontro ao ambiente pronto.
+            Da primeira conversa ao ambiente pronto.
           </h2>
         </Reveal>
         <ol className="mt-16 grid gap-12 md:mt-24 md:grid-cols-5 md:gap-8">
@@ -209,7 +210,7 @@ function Index() {
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
           <Reveal className="flex flex-wrap items-end justify-between gap-10">
             <h2 className="max-w-xl text-3xl leading-[1.2] md:text-5xl">
-              Vamos transformar seu espaço?
+              Vamos planejar seus móveis?
             </h2>
             <Link to="/contato" className="btn-primary">
               Fale com Raquel

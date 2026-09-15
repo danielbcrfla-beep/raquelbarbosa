@@ -7,24 +7,24 @@ import { projects } from "@/data/projects";
 export const Route = createFileRoute("/projetos/")({
   head: () => ({
     meta: [
-      { title: "Projetos | Raquel Barbosa Design de Interiores" },
+      { title: "Projetos | Raquel Barbosa Móveis Planejados" },
       {
         name: "description",
         content:
-          "Portfólio de projetos residenciais, comerciais, reformas e decoração assinados por Raquel Barbosa Design de Interiores.",
+          "Portfólio de móveis planejados: cozinhas, dormitórios, closets, home offices, banheiros e salas sob medida por Raquel Barbosa.",
       },
-      { property: "og:title", content: "Projetos | Raquel Barbosa" },
+      { property: "og:title", content: "Projetos | Raquel Barbosa Móveis Planejados" },
       {
         property: "og:description",
         content:
-          "Portfólio de projetos residenciais, comerciais, reformas e decoração assinados por Raquel Barbosa.",
+          "Cozinhas, dormitórios, home offices, banheiros e salas com marcenaria sob medida.",
       },
     ],
   }),
   component: Projetos,
 });
 
-const categories = ["Todos", "Residencial", "Comercial", "Interiores", "Reforma", "Decoração"];
+const categories = ["Todos", "Cozinhas", "Dormitórios", "Home Office", "Banheiros", "Salas"];
 
 function Projetos() {
   const [filter, setFilter] = useState("Todos");
@@ -34,8 +34,8 @@ function Projetos() {
   return (
     <>
       <PageIntro eyebrow="Portfólio" title="Projetos">
-        Uma seleção de ambientes desenvolvidos com atenção à proporção, à luz e aos
-        materiais.
+        Uma seleção de ambientes com marcenaria planejada, desenvolvidos com atenção
+        às medidas, à luz e aos materiais.
       </PageIntro>
 
       <section className="mx-auto max-w-[1400px] px-6 pb-28 md:px-10 md:pb-44">
