@@ -118,7 +118,7 @@ export function getProject(slug: string) {
 
 export function getNeighbours(slug: string) {
   const i = projects.findIndex((p) => p.slug === slug);
-  const prev = projects[(i - 1 + projects.length) % projects.length];
-  const next = projects[(i + 1) % projects.length];
+  const prev = projects[(i - 1 + projects.length) % projects.length]!;
+  const next = projects[(i + 1) % projects.length]!;
   return { prev, next };
 }
