@@ -52,12 +52,12 @@
 :root {
   --radius: 0px;
 
-  /* Marca */
-  --off-white: oklch(0.9646 0.0057 84.57);
-  --graphite: oklch(0.3223 0.0077 240.07);
-  --blue-grey: oklch(0.5486 0.0202 223.84);
-  --caribe: oklch(0.7018 0.0443 196.19);
-  --sand: oklch(0.854 0.0244 73.58);
+  /* Marca — cores exatas do manual de identidade visual */
+  --off-white: #f5f3ef;
+  --graphite: #303437;
+  --blue-grey: #65747a;
+  --caribe: #7fa8a8;
+  --sand: #d9cdbe;
 
   --background: var(--off-white);
   --foreground: var(--graphite);
