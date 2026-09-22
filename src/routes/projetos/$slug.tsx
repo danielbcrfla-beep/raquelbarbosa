@@ -11,9 +11,9 @@ export const Route = createFileRoute("/projetos/$slug")({
   head: ({ loaderData }) => {
     const p = loaderData?.project;
     const title = p
-      ? `${p.name} | Raquel Barbosa Design de Interiores`
-      : "Projeto | Raquel Barbosa";
-    const description = p ? p.concept : "Projeto de interiores por Raquel Barbosa.";
+      ? `${p.name} | Raquel Barbosa Móveis Planejados`
+      : "Projeto | Raquel Barbosa Móveis Planejados";
+    const description = p ? p.concept : "Móveis planejados sob medida por Raquel Barbosa.";
     return {
       meta: [
         { title },
