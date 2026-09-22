@@ -8,7 +8,7 @@ export const site = {
   role: "Móveis Planejados",
   tagline: "Móveis planejados que transformam sua casa.",
   /** Ex.: "5515999999999" (somente números, com código do país) */
-  whatsapp: "",
+  whatsapp: "5515997399619",
   /** Ex.: "raquelbarbosa.planejados" */
   instagram: "",
   /** Ex.: "contato@raquelbarbosa.com.br" */
