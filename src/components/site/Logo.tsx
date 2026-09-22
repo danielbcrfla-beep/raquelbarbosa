@@ -1,56 +1,51 @@
+import logoDark from "@/assets/logo-rb.png.asset.json";
+import logoLight from "@/assets/logo-rb-light.png.asset.json";
+
 type Variant = "principal" | "horizontal" | "reduzido";
 
-const monogram = (
-  <span className="font-display leading-none tracking-[-0.08em]">
-    R<span className="-ml-[0.18em] inline-block">B</span>
-  </span>
-);
-
+/**
+ * Logo oficial Raquel Barbosa.
+ * `light` usa a versão clara da marca (para fundos escuros/fotos).
+ * A imagem nunca é distorcida: proporção preservada via object-contain.
+ */
 export function Logo({
   variant = "horizontal",
+  light = false,
   className = "",
 }: {
   variant?: Variant;
+  light?: boolean;
   className?: string;
 }) {
+  const src = light ? logoLight.url : logoDark.url;
+  const alt = "Raquel Barbosa — Design de Interiores";
+
   if (variant === "reduzido") {
     return (
       <span
-        className={`inline-flex aspect-square items-center justify-center rounded-full border border-current text-current ${className}`}
-        aria-hidden="true"
+        className={`inline-flex items-center justify-center overflow-hidden rounded-full border border-current p-[18%] ${className}`}
       >
-        <span className="text-[0.95em]">{monogram}</span>
+        <img
+          src={src}
+          alt={alt}
+          className="h-full w-full object-contain object-top"
+          style={{ objectPosition: "center 12%", transform: "scale(1.9)" }}
+        />
       </span>
     );
   }
 
   if (variant === "principal") {
     return (
-      <span className={`inline-flex flex-col items-center text-current ${className}`}>
-        <span className="text-[2.6em]">{monogram}</span>
-        <span className="mt-[0.5em] font-display text-[1em] tracking-[0.22em] uppercase">
-          Raquel Barbosa
-        </span>
-        <span className="mt-[0.45em] text-[0.42em] tracking-brand uppercase">
-          Design de Interiores
-        </span>
-        <span className="mt-[0.9em] h-px w-[3.5em] bg-secondary" />
-      </span>
+      <img
+        src={src}
+        alt={alt}
+        className={`w-auto object-contain ${className}`}
+      />
     );
   }
 
   return (
-    <span className={`inline-flex items-center gap-[0.9em] text-current ${className}`}>
-      <span className="flex flex-col">
-        <span className="font-display text-[1em] leading-none tracking-[0.2em] uppercase">
-          Raquel Barbosa
-        </span>
-        <span className="mt-[0.4em] text-[0.4em] leading-none tracking-brand uppercase opacity-70">
-          Design de Interiores
-        </span>
-      </span>
-      <span className="h-[1.7em] w-px bg-current opacity-30" />
-      <span className="text-[1.5em]">{monogram}</span>
-    </span>
+    <img src={src} alt={alt} className={`w-auto object-contain ${className}`} />
   );
 }
