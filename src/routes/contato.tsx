@@ -157,13 +157,16 @@ function Contato() {
               {whatsappLink ? (
                 <li>
                   <a
-                    href={whatsappLink}
+                    href={`${whatsappLink}?text=${encodeURIComponent("Olá, Raquel Barbosa! Gostaria de solicitar um orçamento para móveis planejados.")}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="link-underline text-[11px] tracking-label uppercase"
+                    className="btn-primary inline-flex"
                   >
-                    WhatsApp
+                    Falar com Raquel no WhatsApp
                   </a>
+                  <p className="mt-4 text-sm text-muted-foreground">
+                    (15) 99739-9619
+                  </p>
                 </li>
               ) : null}
               {instagramLink ? (

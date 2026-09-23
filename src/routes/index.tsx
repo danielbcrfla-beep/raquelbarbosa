@@ -41,7 +41,8 @@ function Index() {
         <div className="relative mx-auto w-full max-w-[1400px] px-6 pt-40 pb-20 text-background md:px-10 md:pb-28">
           <Logo
             variant="principal"
-            className="animate-fade-up hidden text-[15px] md:inline-flex"
+            light
+            className="animate-fade-up hidden h-40 md:block"
           />
           <h1
             className="animate-fade-up mt-12 max-w-2xl text-4xl leading-[1.12] md:mt-16 md:text-6xl"
