@@ -148,9 +148,9 @@ export function getProject(slug: string) {
 
 export function getNeighbours(slug: string) {
   const i = projects.findIndex((p) => p.slug === slug);
-  const fallback = projects[0];
-  if (i < 0 || !fallback) return { prev: undefined, next: undefined };
-  const prev = projects[(i - 1 + projects.length) % projects.length] ?? fallback;
-  const next = projects[(i + 1) % projects.length] ?? fallback;
+  if (i < 0) throw new Error("Projeto não encontrado");
+  const prev = projects[(i - 1 + projects.length) % projects.length];
+  const next = projects[(i + 1) % projects.length];
+  if (!prev || !next) throw new Error("Navegação entre projetos indisponível");
   return { prev, next };
 }
