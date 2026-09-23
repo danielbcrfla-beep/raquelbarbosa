@@ -1,2 +1,2 @@
 # Tarefas
-- [ ] Adicionar botão direto para o WhatsApp no contato
+- [x] Adicionar botão direto para o WhatsApp no contato

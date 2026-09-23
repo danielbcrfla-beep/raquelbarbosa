@@ -24,7 +24,7 @@ export const Route = createFileRoute("/projetos/")({
   component: Projetos,
 });
 
-const categories = ["Todos", "Cozinhas", "Dormitórios", "Home Office", "Banheiros", "Salas"];
+const categories = ["Todos", "Cozinhas", "Salas"];
 
 function Projetos() {
   const [filter, setFilter] = useState("Todos");

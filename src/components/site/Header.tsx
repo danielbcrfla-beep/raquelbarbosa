@@ -37,7 +37,7 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 md:px-10">
         <Link to="/" aria-label="Raquel Barbosa — Design de Interiores">
-          <Logo variant="horizontal" className="text-[13px] md:text-[15px]" />
+          <Logo variant="horizontal" className="h-10 md:h-12" />
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex">

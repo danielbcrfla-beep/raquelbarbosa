@@ -14,7 +14,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
         <div className="grid gap-14 md:grid-cols-[auto_1fr] md:gap-24">
           <div>
-            <Logo variant="reduzido" className="h-16 w-16 text-[22px]" />
+            <Logo variant="reduzido" light className="h-16 w-16" />
             <p className="mt-8 font-display text-xl tracking-[0.16em] uppercase">
               {site.name}
             </p>
