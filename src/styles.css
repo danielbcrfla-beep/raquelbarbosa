@@ -44,6 +44,7 @@
   --color-sand: var(--sand);
   --color-graphite: var(--graphite);
   --color-caribe: var(--caribe);
+  --shadow-editorial: 0 18px 45px color-mix(in oklab, var(--graphite) 18%, transparent);
 
   --tracking-brand: 0.28em;
   --tracking-label: 0.2em;
@@ -95,6 +96,7 @@
     font-family: var(--font-sans);
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
   }
 
   h1,
@@ -103,7 +105,7 @@
   h4 {
     font-family: var(--font-display);
     font-weight: 400;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
 
   ::selection {
@@ -134,7 +136,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  padding: 1.0625rem 2.25rem;
+  min-height: 3.25rem;
+  padding: 1rem 2rem;
   background: var(--blue-grey);
   color: var(--primary-foreground);
   font-size: 0.6875rem;
@@ -143,6 +146,11 @@
   transition:
     background 400ms ease,
     color 400ms ease;
+
+  &:focus-visible {
+    outline: 2px solid var(--blue-grey);
+    outline-offset: 4px;
+  }
 
   &:hover {
     background: var(--graphite);
@@ -155,7 +163,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  padding: 1.0625rem 2.25rem;
+  min-height: 3.25rem;
+  padding: 1rem 2rem;
   border: 1px solid color-mix(in oklab, var(--graphite) 35%, transparent);
   color: inherit;
   font-size: 0.6875rem;
@@ -164,6 +173,11 @@
   transition:
     border-color 400ms ease,
     background 400ms ease;
+
+  &:focus-visible {
+    outline: 2px solid var(--blue-grey);
+    outline-offset: 4px;
+  }
 
   &:hover {
     border-color: currentColor;

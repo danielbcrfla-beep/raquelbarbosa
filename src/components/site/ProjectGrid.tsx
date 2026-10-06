@@ -9,7 +9,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         <div className="overflow-hidden bg-muted">
           <img
             src={project.cover}
-            alt={`${project.name} — ${project.category} em ${project.location}`}
+            alt={project.alt}
             loading="lazy"
             className={`img-zoom w-full object-cover ${
               project.ratio === "portrait"
@@ -19,12 +19,12 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           />
         </div>
         <div className="mt-6 flex items-start justify-between gap-6">
-          <div>
+          <div className="min-w-0">
             <h3 className="font-display text-2xl transition-colors group-hover:text-primary md:text-[1.75rem]">
               {project.name}
             </h3>
             <p className="mt-3 text-[11px] tracking-label uppercase text-muted-foreground">
-              {project.location} · {project.category} · {project.year}
+              {[project.location, project.category, project.year].filter(Boolean).join(" · ")}
             </p>
           </div>
           <span
@@ -41,7 +41,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
 
 export function ProjectGrid({ items }: { items: Project[] }) {
   return (
-    <div className="grid gap-16 md:grid-cols-2 md:gap-x-12 md:gap-y-28">
+    <div className="grid gap-16 md:grid-cols-2 md:gap-x-10 md:gap-y-24 lg:gap-x-16 lg:gap-y-32">
       {items.map((project, i) => (
         <div key={project.slug} className={i % 3 === 0 ? "md:mt-0" : "md:mt-20"}>
           <ProjectCard project={project} index={i} />

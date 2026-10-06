@@ -20,6 +20,8 @@ export const Route = createFileRoute("/projetos/$slug")({
         { name: "description", content: description },
         { property: "og:title", content: title },
         { property: "og:description", content: description },
+        { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
     };
   },
@@ -34,7 +36,7 @@ function ProjetoDetalhe() {
       <section className="relative h-[70vh] min-h-[420px] overflow-hidden md:h-[86vh]">
         <img
           src={project.cover}
-          alt={`${project.name} — imagem principal`}
+          alt={project.alt}
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-graphite/30" />
@@ -45,7 +47,7 @@ function ProjetoDetalhe() {
             </p>
             <h1 className="mt-6 text-4xl md:text-6xl">{project.name}</h1>
             <p className="mt-5 text-[11px] tracking-label uppercase opacity-80">
-              {project.location} · {project.year}
+              {[project.location, project.year].filter(Boolean).join(" · ")}
             </p>
           </div>
         </div>
@@ -69,14 +71,16 @@ function ProjetoDetalhe() {
       </section>
 
       <section className="mx-auto max-w-[1400px] px-6 pb-24 md:px-10 md:pb-36">
-        <div className="grid gap-6 md:grid-cols-12 md:gap-8">
+        <div className={`grid gap-6 md:grid-cols-12 md:gap-8 ${project.gallery.length === 1 ? "md:place-items-center" : ""}`}>
           {project.gallery.map((src, i) => (
             <Reveal
               key={`${src}-${i}`}
               delay={i * 90}
               className={
-                i === 0
-                  ? "md:col-span-8"
+                project.gallery.length === 1
+                  ? "md:col-span-10"
+                  : i === 0
+                    ? "md:col-span-8"
                   : i === 1
                     ? "md:col-span-4 md:mt-16"
                     : "md:col-span-7 md:col-start-4"
@@ -84,9 +88,9 @@ function ProjetoDetalhe() {
             >
               <img
                 src={src}
-                alt={`${project.name} — imagem ${i + 1} da galeria`}
+                alt={i === 0 ? project.alt : `${project.name} — detalhe ${i + 1}`}
                 loading="lazy"
-                className="w-full object-cover"
+                className="aspect-[16/11] w-full object-cover"
               />
             </Reveal>
           ))}

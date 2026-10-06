@@ -19,12 +19,14 @@ export const Route = createFileRoute("/projetos/")({
         content:
           "Cozinhas, dormitórios, home offices, banheiros e salas com marcenaria sob medida.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Projetos,
 });
 
-const categories = ["Todos", "Cozinhas", "Salas"];
+const categories = ["Todos", "Cozinhas", "Dormitórios", "Salas"];
 
 function Projetos() {
   const [filter, setFilter] = useState("Todos");
@@ -39,7 +41,7 @@ function Projetos() {
       </PageIntro>
 
       <section className="mx-auto max-w-[1400px] px-6 pb-28 md:px-10 md:pb-44">
-        <div className="flex flex-wrap gap-x-8 gap-y-4">
+        <div className="flex flex-wrap gap-x-8 gap-y-5 border-b border-border pb-6">
           {categories.map((c) => (
             <button
               key={c}

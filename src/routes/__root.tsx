@@ -13,6 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 function NotFoundComponent() {
   return (
@@ -71,18 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Raquel Barbosa | Design de Interiores" },
+      { title: "Raquel Barbosa | Móveis Planejados" },
       {
         name: "description",
         content:
-          "Raquel Barbosa Design de Interiores. Projetos de interiores personalizados, sofisticados e funcionais para ambientes que refletem a essência de cada cliente.",
+          "Móveis planejados e marcenaria sob medida para ambientes sofisticados, funcionais e atemporais.",
       },
       { name: "author", content: "Raquel Barbosa" },
-      { property: "og:title", content: "Raquel Barbosa | Design de Interiores" },
+      { property: "og:title", content: "Raquel Barbosa | Móveis Planejados" },
       {
         property: "og:description",
         content:
-          "Projetos de interiores personalizados, sofisticados e funcionais para ambientes que refletem a essência de cada cliente.",
+          "Móveis planejados e marcenaria sob medida para ambientes sofisticados, funcionais e atemporais.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
@@ -130,6 +131,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </QueryClientProvider>
   );
 }
