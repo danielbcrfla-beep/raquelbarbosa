@@ -4,6 +4,7 @@ import { PageIntro } from "@/components/site/PageIntro";
 import { Reveal } from "@/components/site/Reveal";
 import { projectTypes } from "@/data/content";
 import { emailLink, instagramLink, site, whatsappLink } from "@/config/site";
+import { SocialLink } from "@/components/site/SocialLink";
 
 export const Route = createFileRoute("/contato")({
   head: () => ({
@@ -159,7 +160,7 @@ function Contato() {
                   <a
                     href={`${whatsappLink}?text=${encodeURIComponent("Olá, Raquel Barbosa! Gostaria de solicitar um orçamento para móveis planejados.")}`}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="btn-primary inline-flex"
                   >
                     Falar com Raquel no WhatsApp
@@ -171,14 +172,12 @@ function Contato() {
               ) : null}
               {instagramLink ? (
                 <li>
-                  <a
+                  <SocialLink
+                    kind="instagram"
                     href={instagramLink}
-                    target="_blank"
-                    rel="noreferrer"
+                    label="Instagram"
                     className="link-underline text-[11px] tracking-label uppercase"
-                  >
-                    Instagram
-                  </a>
+                  />
                 </li>
               ) : null}
               {emailLink ? (

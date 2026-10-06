@@ -1,14 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { Logo } from "./Logo";
 import { emailLink, instagramLink, site, whatsappLink } from "@/config/site";
+import { SocialLink } from "./SocialLink";
 
 export function Footer() {
-  const external = [
-    instagramLink ? { href: instagramLink, label: "Instagram" } : null,
-    whatsappLink ? { href: whatsappLink, label: "WhatsApp" } : null,
-    emailLink ? { href: emailLink, label: "E-mail" } : null,
-  ].filter(Boolean) as { href: string; label: string }[];
-
   return (
     <footer className="bg-graphite text-background">
       <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
@@ -42,17 +37,27 @@ export function Footer() {
             </nav>
 
             <div className="flex flex-col gap-4">
-              {external.map((l) => (
-                <a
-                  key={l.label}
-                  href={l.href}
-                  target="_blank"
-                  rel="noreferrer"
+              {instagramLink ? (
+                <SocialLink
+                  kind="instagram"
+                  href={instagramLink}
+                  label="Instagram"
                   className="link-underline w-fit text-[11px] tracking-label uppercase opacity-80"
-                >
-                  {l.label}
+                />
+              ) : null}
+              {whatsappLink ? (
+                <SocialLink
+                  kind="whatsapp"
+                  href={whatsappLink}
+                  label="WhatsApp"
+                  className="link-underline w-fit text-[11px] tracking-label uppercase opacity-80"
+                />
+              ) : null}
+              {emailLink ? (
+                <a href={emailLink} className="link-underline w-fit text-[11px] tracking-label uppercase opacity-80">
+                  E-mail
                 </a>
-              ))}
+              ) : null}
               <p className="max-w-xs font-display text-lg leading-relaxed italic opacity-90">
                 {site.tagline}
               </p>

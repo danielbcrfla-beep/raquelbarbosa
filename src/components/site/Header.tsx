@@ -35,12 +35,12 @@ export function Header() {
           : "border-transparent py-7"
       }`}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 md:px-10">
-        <Link to="/" aria-label="Raquel Barbosa — Design de Interiores">
+      <div className="mx-auto grid max-w-[1400px] grid-cols-[minmax(0,1fr)_auto] items-center gap-5 px-6 md:flex md:justify-between md:px-10">
+        <Link to="/" aria-label="Raquel Barbosa — Design de Interiores" className="min-w-0">
           <Logo
             variant="horizontal"
             light={!scrolled}
-            className="h-10 md:h-12"
+            className="h-9 max-w-full md:h-12"
           />
         </Link>
 
