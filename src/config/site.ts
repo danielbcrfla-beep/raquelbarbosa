@@ -9,15 +9,13 @@ export const site = {
   tagline: "Móveis planejados que transformam sua casa.",
   /** Ex.: "5515999999999" (somente números, com código do país) */
   whatsapp: "5515997399619",
-  /** Ex.: "raquelbarbosa.planejados" */
-  instagram: "",
+  instagram:
+    "https://www.instagram.com/raquelbarbosa_interiores?stkn=Y21mYTRiZmV5ZGxi&utm_source=qr",
   /** Ex.: "contato@raquelbarbosa.com.br" */
   email: "",
   city: "",
 } as const;
 
 export const whatsappLink = site.whatsapp ? `https://wa.me/${site.whatsapp}` : "";
-export const instagramLink = site.instagram
-  ? `https://instagram.com/${site.instagram}`
-  : "";
+export const instagramLink = site.instagram;
 export const emailLink = site.email ? `mailto:${site.email}` : "";
