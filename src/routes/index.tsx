@@ -3,7 +3,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { Logo } from "@/components/site/Logo";
 import { ProjectGrid } from "@/components/site/ProjectGrid";
 import { heroImage, introImage, projects } from "@/data/projects";
-import { services, processSteps, testimonials } from "@/data/content";
+import { services, processSteps } from "@/data/content";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -20,6 +20,8 @@ export const Route = createFileRoute("/")({
         content:
           "Móveis planejados sob medida para todos os ambientes da casa, do projeto à instalação.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -182,28 +184,6 @@ function Index() {
             </Reveal>
           ))}
         </ol>
-      </section>
-
-      {/* DEPOIMENTOS */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
-          <Reveal>
-            <p className="label-eyebrow">Depoimentos</p>
-          </Reveal>
-          <div className="mt-14 grid gap-14 md:grid-cols-3 md:gap-12">
-            {testimonials.map((t, i) => (
-              <Reveal key={t.id} delay={i * 120}>
-                <p className="font-display text-xl leading-relaxed italic text-foreground/80">
-                  “{t.quote}”
-                </p>
-                <p className="mt-8 text-[11px] tracking-label uppercase">{t.name}</p>
-                <p className="mt-2 text-[11px] tracking-label uppercase text-muted-foreground">
-                  {t.project}
-                </p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* CTA */}

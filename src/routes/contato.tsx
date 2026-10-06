@@ -21,6 +21,8 @@ export const Route = createFileRoute("/contato")({
         content:
           "Solicite um orçamento de móveis planejados sob medida para sua casa.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Contato,

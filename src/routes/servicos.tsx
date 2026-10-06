@@ -18,6 +18,8 @@ export const Route = createFileRoute("/servicos")({
         content:
           "Móveis planejados e marcenaria sob medida para todos os ambientes da casa.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Servicos,
@@ -53,7 +55,7 @@ function Servicos() {
         </ul>
       </section>
 
-      <section className="bg-muted/60">
+      <section className="border-y border-border bg-muted/45">
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
           <Reveal>
             <p className="label-eyebrow">Processo</p>
