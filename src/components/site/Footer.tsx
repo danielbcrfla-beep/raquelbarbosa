@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Logo } from "./Logo";
+import perfil from "@/assets/perfil-raquel.png.asset.json";
 import { emailLink, instagramLink, site, whatsappLink } from "@/config/site";
 import { SocialLink } from "./SocialLink";
 
@@ -9,7 +9,11 @@ export function Footer() {
       <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
         <div className="grid gap-14 md:grid-cols-[auto_1fr] md:gap-24">
           <div>
-            <Logo variant="reduzido" light className="h-16 w-16" />
+            <img
+              src={perfil.url}
+              alt="Retrato de Raquel Barbosa"
+              className="h-20 w-20 rounded-full object-cover border border-background/25"
+            />
             <p className="mt-8 font-display text-xl tracking-[0.16em] uppercase">
               {site.name}
             </p>
