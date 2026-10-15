@@ -5,8 +5,8 @@
  */
 export const site = {
   name: "Raquel Barbosa",
-  role: "Móveis Planejados",
-  tagline: "Móveis planejados que transformam sua casa.",
+  role: "Design de Interiores",
+  tagline: "Ambientes com identidade, conforto e marcenaria autoral.",
   /** Ex.: "5515999999999" (somente números, com código do país) */
   whatsapp: "5515997399619",
   instagram:

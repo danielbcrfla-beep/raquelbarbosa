@@ -9,17 +9,17 @@ import { SocialLink } from "@/components/site/SocialLink";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato | Raquel Barbosa Móveis Planejados" },
+      { title: "Contato | Raquel Barbosa Design de Interiores" },
       {
         name: "description",
         content:
-          "Solicite um orçamento de móveis planejados: cozinhas, dormitórios, closets, home office e salas sob medida.",
+          "Solicite um orçamento de design de interiores: projetos completos, ambientes específicos, consultoria e marcenaria sob medida.",
       },
-      { property: "og:title", content: "Contato | Raquel Barbosa Móveis Planejados" },
+      { property: "og:title", content: "Contato | Raquel Barbosa Design de Interiores" },
       {
         property: "og:description",
         content:
-          "Solicite um orçamento de móveis planejados sob medida para sua casa.",
+          "Solicite um orçamento para o projeto de interiores da sua casa.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -56,7 +56,7 @@ function Contato() {
     }
     if (site.email) {
       window.location.href = `${emailLink}?subject=${encodeURIComponent(
-        `Orçamento de móveis planejados — ${data.get("name")}`,
+        `Orçamento de design de interiores — ${data.get("name")}`,
       )}&body=${encodeURIComponent(message)}`;
       setSent(true);
       return;
@@ -66,7 +66,7 @@ function Contato() {
 
   return (
     <>
-      <PageIntro eyebrow="Contato" title="Vamos planejar seus móveis?">
+      <PageIntro eyebrow="Contato" title="Vamos criar o seu projeto?">
         Conte sobre o ambiente que você quer transformar. Retorno com uma proposta
         pensada para o seu espaço.
       </PageIntro>
@@ -160,7 +160,7 @@ function Contato() {
               {whatsappLink ? (
                 <li>
                   <a
-                    href={`${whatsappLink}?text=${encodeURIComponent("Olá, Raquel Barbosa! Gostaria de solicitar um orçamento para móveis planejados.")}`}
+                    href={`${whatsappLink}?text=${encodeURIComponent("Olá, Raquel! Gostaria de solicitar um orçamento para projeto de design de interiores.")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary inline-flex"

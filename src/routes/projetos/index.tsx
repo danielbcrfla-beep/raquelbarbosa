@@ -7,17 +7,17 @@ import { projects } from "@/data/projects";
 export const Route = createFileRoute("/projetos/")({
   head: () => ({
     meta: [
-      { title: "Projetos | Raquel Barbosa Móveis Planejados" },
+      { title: "Projetos | Raquel Barbosa Design de Interiores" },
       {
         name: "description",
         content:
-          "Portfólio de móveis planejados: cozinhas, dormitórios, closets, home offices, banheiros e salas sob medida por Raquel Barbosa.",
+          "Portfólio de design de interiores de Raquel Barbosa: cozinhas, suítes e salas com marcenaria sob medida.",
       },
-      { property: "og:title", content: "Projetos | Raquel Barbosa Móveis Planejados" },
+      { property: "og:title", content: "Projetos | Raquel Barbosa Design de Interiores" },
       {
         property: "og:description",
         content:
-          "Cozinhas, dormitórios, home offices, banheiros e salas com marcenaria sob medida.",
+          "Ambientes completos de interiores, com luz, texturas e marcenaria sob medida.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -36,7 +36,7 @@ function Projetos() {
   return (
     <>
       <PageIntro eyebrow="Portfólio" title="Projetos">
-        Uma seleção de ambientes com marcenaria planejada, desenvolvidos com atenção
+        Uma seleção de ambientes de interiores, desenvolvidos com atenção
         às medidas, à luz e aos materiais.
       </PageIntro>
 

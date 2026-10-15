@@ -8,17 +8,17 @@ import { services, processSteps } from "@/data/content";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Raquel Barbosa | Móveis Planejados" },
+      { title: "Raquel Barbosa | Design de Interiores" },
       {
         name: "description",
         content:
-          "Móveis planejados sob medida: cozinhas, dormitórios, closets, home offices e salas que transformam sua casa.",
+          "Design de interiores residencial: projetos completos, consultoria e marcenaria sob medida para ambientes com identidade.",
       },
-      { property: "og:title", content: "Raquel Barbosa | Móveis Planejados" },
+      { property: "og:title", content: "Raquel Barbosa | Design de Interiores" },
       {
         property: "og:description",
         content:
-          "Móveis planejados sob medida para todos os ambientes da casa, do projeto à instalação.",
+          "Projetos de interiores completos, com marcenaria sob medida, do briefing à entrega.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -50,14 +50,14 @@ function Index() {
             className="animate-fade-up mt-12 max-w-2xl text-4xl leading-[1.12] md:mt-16 md:text-6xl"
             style={{ animationDelay: "150ms" }}
           >
-            Móveis planejados que transformam sua casa.
+            Design de interiores que transforma a forma de viver.
           </h1>
           <p
             className="animate-fade-up mt-8 max-w-lg text-sm leading-loose opacity-85"
             style={{ animationDelay: "300ms" }}
           >
-            Cozinhas, dormitórios, closets, home offices e salas sob medida —
-            projetados para o seu espaço e para o seu estilo de vida.
+            Projetos de interiores completos, com luz, materiais e marcenaria sob
+            medida pensados para o seu espaço e para o seu estilo de vida.
           </p>
           <div
             className="animate-fade-up mt-12 flex flex-wrap gap-4"
@@ -79,12 +79,12 @@ function Index() {
           <Reveal className="md:col-span-5 md:col-start-1">
             <p className="label-eyebrow">Estúdio</p>
             <h2 className="mt-8 text-3xl leading-[1.15] md:text-5xl">
-              Marcenaria sob medida, do projeto à instalação.
+              Interiores com identidade, do conceito ao detalhe.
             </h2>
             <p className="mt-8 max-w-md text-sm leading-loose text-muted-foreground">
               Cada projeto nasce da combinação entre estética, funcionalidade e
-              aproveitamento do espaço. Raquel Barbosa projeta móveis planejados que
-              traduzem o estilo de vida de cada cliente em ambientes sofisticados,
+              aproveitamento do espaço. Raquel Barbosa desenvolve projetos de interiores —
+              com a marcenaria sob medida como diferencial — que traduzem o estilo de vida de cada cliente em ambientes sofisticados,
               organizados e atemporais.
             </p>
             <Link
@@ -191,7 +191,7 @@ function Index() {
         <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-36">
           <Reveal className="flex flex-wrap items-end justify-between gap-10">
             <h2 className="max-w-xl text-3xl leading-[1.2] md:text-5xl">
-              Vamos planejar seus móveis?
+              Vamos criar o seu projeto?
             </h2>
             <Link to="/contato" className="btn-primary">
               Fale com Raquel

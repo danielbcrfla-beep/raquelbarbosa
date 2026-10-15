@@ -79,18 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Raquel Barbosa | Móveis Planejados" },
+      { title: "Raquel Barbosa | Design de Interiores" },
       {
         name: "description",
         content:
-          "Móveis planejados e marcenaria sob medida para ambientes sofisticados, funcionais e atemporais.",
+          "Design de interiores com projetos completos e marcenaria sob medida para ambientes sofisticados, funcionais e atemporais.",
       },
       { name: "author", content: "Raquel Barbosa" },
-      { property: "og:title", content: "Raquel Barbosa | Móveis Planejados" },
+      { property: "og:title", content: "Raquel Barbosa | Design de Interiores" },
       {
         property: "og:description",
         content:
-          "Móveis planejados e marcenaria sob medida para ambientes sofisticados, funcionais e atemporais.",
+          "Design de interiores com projetos completos e marcenaria sob medida para ambientes sofisticados, funcionais e atemporais.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },

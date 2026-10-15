@@ -1,63 +1,25 @@
-export const services = [
-  {
-    number: "01",
-    title: "Projeto de móveis planejados",
-    description:
-      "Desenvolvimento completo de marcenaria sob medida para todos os ambientes da casa.",
-  },
-  {
-    number: "02",
-    title: "Cozinhas sob medida",
-    description:
-      "Cozinhas planejadas com aproveitamento inteligente de espaço, funcionalidade e acabamento refinado.",
-  },
-  {
-    number: "03",
-    title: "Dormitórios e closets",
-    description:
-      "Guarda-roupas, closets e cabeceiras planejados para organizar o dia a dia com conforto.",
-  },
-  {
-    number: "04",
-    title: "Salas e home office",
-    description:
-      "Painéis, estantes, racks e escritórios planejados que unem estética e praticidade.",
-  },
-  {
-    number: "05",
-    title: "Consultoria e decoração",
-    description:
-      "Orientação profissional para decisões de layout, materiais, cores e complementos do ambiente.",
-  },
-];
+const mk = (items: [string, string][]) =>
+  items.map(([title, description], i) => ({
+    number: String(i + 1).padStart(2, "0"),
+    title,
+    description,
+  }));
 
-export const processSteps = [
-  {
-    number: "01",
-    title: "Conversa",
-    description: "Entendimento das necessidades, medidas e estilo de cada cliente.",
-  },
-  {
-    number: "02",
-    title: "Conceito",
-    description: "Definição da identidade visual e do conceito do projeto.",
-  },
-  {
-    number: "03",
-    title: "Projeto",
-    description: "Desenho detalhado dos móveis, materiais, ferragens e acabamentos.",
-  },
-  {
-    number: "04",
-    title: "Produção",
-    description: "Acompanhamento da fabricação da marcenaria sob medida.",
-  },
-  {
-    number: "05",
-    title: "Instalação",
-    description: "Montagem e entrega do ambiente pronto para usar.",
-  },
-];
+export const services = mk([
+  ["Projeto de interiores completo", "Concepção estética, layout, iluminação, revestimentos e marcenaria integrados em um único projeto."],
+  ["Marcenaria sob medida e detalhamento", "Móveis planejados desenhados para otimizar o espaço e a rotina, com detalhamento técnico preciso."],
+  ["Consultoria de interiores", "Orientação pontual para layout, paleta de cores, mobiliário e acabamentos."],
+  ["Produção e ambientação", "Curadoria de tecidos, tapetes, iluminação decorativa e objetos que finalizam o espaço."],
+  ["Acompanhamento de obra e montagem", "Alinhamento com marcenaria e fornecedores para que o projeto seja executado como foi pensado."],
+]);
+
+export const processSteps = mk([
+  ["Briefing e imersão", "Entendimento da rotina, das necessidades e do estilo de cada cliente."],
+  ["Estudo preliminar e 3D", "Layout, conceito e imagens para visualizar o ambiente antes da obra."],
+  ["Projeto executivo", "Detalhamento técnico de marcenaria, iluminação e revestimentos."],
+  ["Curadoria e especificação", "Seleção de materiais, mobiliário e complementos."],
+  ["Produção e entrega", "Acompanhamento da execução até o ambiente pronto para viver."],
+]);
 
 /** Placeholders editáveis — substituir pelos depoimentos reais dos clientes. */
 export const testimonials = [
@@ -67,11 +29,10 @@ export const testimonials = [
 ];
 
 export const projectTypes = [
-  "Cozinha",
-  "Dormitório ou closet",
-  "Sala de estar ou jantar",
-  "Home office",
-  "Banheiro",
-  "Casa completa",
+  "Projeto residencial completo",
+  "Ambiente específico (cozinha, suíte, living)",
+  "Móveis planejados / marcenaria",
+  "Consultoria de interiores",
+  "Comercial",
   "Outro",
 ];
