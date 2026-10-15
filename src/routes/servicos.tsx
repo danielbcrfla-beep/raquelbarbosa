@@ -6,17 +6,17 @@ import { processSteps, services } from "@/data/content";
 export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
-      { title: "Serviços | Raquel Barbosa Móveis Planejados" },
+      { title: "Serviços | Raquel Barbosa Design de Interiores" },
       {
         name: "description",
         content:
-          "Projeto de móveis planejados, cozinhas sob medida, dormitórios, closets, home office e salas. Do conceito à instalação.",
+          "Projeto de interiores completo, marcenaria sob medida, consultoria, ambientação e acompanhamento de obra.",
       },
-      { property: "og:title", content: "Serviços | Raquel Barbosa Móveis Planejados" },
+      { property: "og:title", content: "Serviços | Raquel Barbosa Design de Interiores" },
       {
         property: "og:description",
         content:
-          "Móveis planejados e marcenaria sob medida para todos os ambientes da casa.",
+          "Design de interiores completo, com marcenaria sob medida.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -29,7 +29,7 @@ function Servicos() {
   return (
     <>
       <PageIntro eyebrow="Serviços" title="Do conceito à instalação.">
-        Projetos de móveis planejados para cada ambiente da casa, com atenção às
+        Projetos de interiores para cada ambiente da casa, com atenção às
         medidas, aos materiais e ao seu estilo de vida.
       </PageIntro>
 

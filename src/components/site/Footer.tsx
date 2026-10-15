@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="mt-20 h-px w-full bg-background/15" />
         <p className="mt-8 text-[10px] tracking-label uppercase opacity-50">
-          © 2026 Raquel Barbosa Móveis Planejados
+          © 2026 Raquel Barbosa Design de Interiores
         </p>
       </div>
     </footer>

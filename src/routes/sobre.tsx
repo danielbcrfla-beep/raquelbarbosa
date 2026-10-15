@@ -5,17 +5,17 @@ import aboutImage from "@/assets/about.jpg";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre | Raquel Barbosa Móveis Planejados" },
+      { title: "Sobre | Raquel Barbosa Design de Interiores" },
       {
         name: "description",
         content:
-          "Conheça Raquel Barbosa, designer de interiores especializada em móveis planejados e marcenaria sob medida para todos os ambientes da casa.",
+          "Conheça Raquel Barbosa, designer de interiores que cria ambientes completos, com a marcenaria sob medida como extensão do projeto.",
       },
-      { property: "og:title", content: "Sobre | Raquel Barbosa Móveis Planejados" },
+      { property: "og:title", content: "Sobre | Raquel Barbosa Design de Interiores" },
       {
         property: "og:description",
         content:
-          "Designer de interiores especializada em móveis planejados e ambientes sob medida.",
+          "Designer de interiores: função, luz e materiais atemporais.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -35,7 +35,7 @@ function Sobre() {
               className="animate-fade-up mt-8 text-4xl leading-[1.12] md:text-6xl"
               style={{ animationDelay: "120ms" }}
             >
-              Móveis planejados com identidade.
+              Interiores com identidade.
             </h1>
             <div
               className="animate-fade-up mt-10 max-w-lg space-y-6 text-sm leading-loose text-muted-foreground"
@@ -69,7 +69,7 @@ function Sobre() {
           <Reveal delay={150} className="md:col-span-5 md:col-start-8">
             <img
               src={aboutImage}
-              alt="Raquel Barbosa em ambiente com marcenaria planejada"
+              alt="Raquel Barbosa em ambiente de interiores"
               loading="lazy"
               className="w-full object-cover"
             />
