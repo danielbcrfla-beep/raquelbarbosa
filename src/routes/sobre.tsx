@@ -42,9 +42,10 @@ function Sobre() {
               style={{ animationDelay: "240ms" }}
             >
               <p>
-                Raquel Barbosa é designer de interiores especializada em móveis
-                planejados. Cada projeto nasce da escuta atenta de quem vai viver o
-                espaço — e se traduz em marcenaria sob medida, funcional e atemporal.
+                Raquel Barbosa é designer de interiores que cria ambientes
+                completos. Cada projeto nasce da escuta atenta de quem vai viver o
+                espaço — e se traduz em layout, luz, materiais e uma marcenaria sob
+                medida pensada como extensão da arquitetura.
               </p>
               <p>
                 Do primeiro desenho à instalação final, o trabalho acompanha cada
@@ -88,16 +89,16 @@ function Sobre() {
           <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-10">
             {[
               {
-                title: "Sob medida de verdade",
-                text: "Nada de módulos prontos adaptados. Cada peça é projetada milímetro a milímetro para o ambiente.",
+                title: "Função real",
+                text: "Layout e marcenaria desenhados para a rotina de quem vive o espaço.",
               },
               {
-                title: "Materiais selecionados",
-                text: "Curadoria de laminados, madeiras, ferragens e acabamentos com durabilidade comprovada.",
+                title: "Materiais atemporais",
+                text: "Curadoria de revestimentos, madeiras, tecidos e acabamentos que envelhecem bem.",
               },
               {
-                title: "Acompanhamento completo",
-                text: "Do projeto à instalação, com orientação em todas as etapas da produção da marcenaria.",
+                title: "Luz e atmosfera",
+                text: "Iluminação natural e indireta pensada para criar ambientes acolhedores.",
               },
             ].map((item, i) => (
               <Reveal key={item.title} delay={i * 120}>

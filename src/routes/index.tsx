@@ -56,8 +56,8 @@ function Index() {
             className="animate-fade-up mt-8 max-w-lg text-sm leading-loose opacity-85"
             style={{ animationDelay: "300ms" }}
           >
-            Cozinhas, dormitórios, closets, home offices e salas sob medida —
-            projetados para o seu espaço e para o seu estilo de vida.
+            Projetos de interiores completos, com luz, materiais e marcenaria sob
+            medida pensados para o seu espaço e para o seu estilo de vida.
           </p>
           <div
             className="animate-fade-up mt-12 flex flex-wrap gap-4"
@@ -83,8 +83,8 @@ function Index() {
             </h2>
             <p className="mt-8 max-w-md text-sm leading-loose text-muted-foreground">
               Cada projeto nasce da combinação entre estética, funcionalidade e
-              aproveitamento do espaço. Raquel Barbosa projeta móveis planejados que
-              traduzem o estilo de vida de cada cliente em ambientes sofisticados,
+              aproveitamento do espaço. Raquel Barbosa desenvolve projetos de interiores —
+              com a marcenaria sob medida como diferencial — que traduzem o estilo de vida de cada cliente em ambientes sofisticados,
               organizados e atemporais.
             </p>
             <Link
